@@ -92,6 +92,39 @@ export const exchange = (
                     loaded: true,
                     contract: action.exchange
                 }
+
+            
+            //////////////////////////////////////////////////
+            // ORDERS LOADED (CANCELLED, FILLED & ALL) //////
+            ////////////////////////////////////////////////
+            case 'CANCELLED_ORDERS_LOADED':
+                return{
+                    ...state,
+                    cancelledOrders: {
+                        loaded: true,
+                        data: action.cancelledOrders
+                    }
+                }
+
+            case 'FILLED_ORDERS_LOADED':
+                return{
+                    ...state,
+                    filledOrders: {
+                        loaded: true,
+                        data: action.filledOrders
+                    }
+                }
+            
+            case 'ALL_ORDERS_LOADED':
+                return {
+                    ...state,
+                    allOrders: {
+                        loaded: true,
+                        data: action.allOrders
+                    }
+                }
+
+
             ////////////////////////
             // BALANCE CASES //////
             //////////////////////
@@ -160,7 +193,7 @@ export const exchange = (
 
             
             case 'NEW_ORDER_SUCCESS':
-                index = state.allOrders.data.findIndex(order => order.id === action.order.id)
+                index = state.allOrders.data.findIndex(order => order.id.toString() === action.order.id.toString())
 
                 if (index === -1) {
                     data = [...state.allOrders.data, action.order]
