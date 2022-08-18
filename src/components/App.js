@@ -15,6 +15,7 @@ import {
 import Navbar from './Navbar';
 import Markets from './Markets';
 import Balance from './Balance.js';
+import Order from './Order.js';
 
 
 
@@ -74,7 +75,7 @@ function App() {
 
           <Balance />
 
-          {/* Order */}
+          <Order />
 
         </section>
         <section className='exchange__section--right grid'>
