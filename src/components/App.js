@@ -18,6 +18,7 @@ import Markets from './Markets';
 import Balance from './Balance.js';
 import Order from './Order.js';
 import OrderBook from './OrderBook.js';
+import PriceChart from './PriceChart.js';
 
 
 
@@ -85,7 +86,7 @@ function App() {
         </section>
         <section className='exchange__section--right grid'>
 
-          {/* PriceChart */}
+          <PriceChart />
 
           {/* Transactions */}
 
