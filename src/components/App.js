@@ -17,9 +17,10 @@ import Navbar from './Navbar';
 import Markets from './Markets';
 import Balance from './Balance.js';
 import Order from './Order.js';
-import OrderBook from './OrderBook.js';
-import Trades from './Trades.js';
 import PriceChart from './PriceChart.js';
+import Transactions from './Transactions.js';
+import Trades from './Trades.js';
+import OrderBook from './OrderBook.js';
 
 
 
@@ -89,7 +90,7 @@ function App() {
 
           <PriceChart />
 
-          {/* Transactions */}
+          <Transactions />
 
           <Trades />
 
