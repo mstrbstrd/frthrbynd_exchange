@@ -205,7 +205,7 @@ export const exchange = (
                         ...state.filledOrders,
                         data
                     },
-                    events: [action.event, state.events]
+                    events: [action.event, ...state.events]
                 }
 
             case 'ORDER_FILL_FAIL':
