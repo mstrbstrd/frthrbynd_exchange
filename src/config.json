@@ -18,6 +18,21 @@
         "explorerURL": "#"
     },
     "42": {
+        "exchange": {
+            "address": "0x7414f050932113dA37E01a21B427E3f9B5289DE3"
+        },
+        "FRTHR": {
+            "address": "0x2336c4179c26447073eE5C7A5740Df5799db4D02"
+
+        },
+        "mETH": {
+            "address": "0xb7e5D8Ed58e387C4eb5aDFea06C57a8148796d9A"
+
+        },
+        "mDAI": {
+            "address": "0x06f9fFe82442d599dA2D8a8284F864a1e61e6BcB"
+
+        },
         "explorerURL": "https://kovan.etherscan.io/"
     }
 }
